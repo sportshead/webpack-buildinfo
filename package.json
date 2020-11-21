@@ -1,0 +1,19 @@
+{
+    "name": "webpack-buildinfo",
+    "private": true,
+    "devDependencies": {
+        "@types/loader-utils": "^2.0.1",
+        "@types/webpack": "^4.41.25",
+        "typescript": "^4.1.2"
+    },
+    "dependencies": {
+        "execa": "^4.1.0",
+        "loader-utils": "^2.0.0"
+    },
+    "peerDependencies": {
+        "webpack": "*"
+    },
+    "scripts": {
+        "build": "tsc"
+    }
+}
