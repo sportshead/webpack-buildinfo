@@ -17,6 +17,7 @@ export default function loader(
         time: false,
         platform: false,
         arch: false,
+        cpus: false,
         hostname: false,
         freemem: false,
         totalmem: false,
@@ -66,12 +67,19 @@ export default function loader(
     }
     if (options.hostname || options.all) {
         this.emitWarning(
-            `Warning: Your hostname is being built into the program. This may potentially be sensitive. Location of usage: ${this.rootContext}`
+            new Error(
+                "Your hostname is being built into the program. This may include sensitive data."
+            )
         );
         logger.debug("Including hostname in output object");
         output.hostname = os.hostname();
     }
     if (options.networkInterfaces || options.all) {
+        this.emitWarning(
+            new Error(
+                "Information about your network interfaces is being built into the program. This may include sensitive data."
+            )
+        );
         logger.debug("Including network interfaces in output object");
         output.networkInterfaces = os.networkInterfaces();
     }
@@ -84,6 +92,11 @@ export default function loader(
         output.totalmem = os.totalmem();
     }
     if (options.userInfo || options.all) {
+        this.emitWarning(
+            new Error(
+                "Your user information is being built into the program. This may include sensitive data."
+            )
+        );
         logger.debug("Including user info in output object");
         output.userInfo = os.userInfo();
     }
