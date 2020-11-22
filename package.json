@@ -1,6 +1,6 @@
 {
     "name": "@sportshead/webpack-buildinfo",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "sportshead",
     "devDependencies": {
         "@types/loader-utils": "^2.0.1",
@@ -21,5 +21,7 @@
     "types": "build/index.d.ts",
     "files": [
         "build/"
-    ]
+    ],
+    "repository": "https://github.com/sportshead/webpack-buildinfo.git",
+    "homepage": "https://github.com/sportshead/webpack-buildinfo#readme"
 }
