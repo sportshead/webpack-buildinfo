@@ -23,5 +23,6 @@
         "build/"
     ],
     "repository": "https://github.com/sportshead/webpack-buildinfo.git",
-    "homepage": "https://github.com/sportshead/webpack-buildinfo#readme"
+    "homepage": "https://github.com/sportshead/webpack-buildinfo#readme",
+    "license": "Apache-2.0"
 }
