@@ -2,6 +2,18 @@
 
 Webpack buildinfo is a Webpack loader that injects build information into code.
 
+## Table of Contents
+
+<!-- toc -->
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+  * [`esModule`](#esmodule)
+  * [`all`](#all)
+
+<!-- tocstop -->
+
 ## Installation
 
 ```bash
