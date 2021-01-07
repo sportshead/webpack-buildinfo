@@ -17,9 +17,9 @@ Webpack buildinfo is a Webpack loader that injects build information into code.
 ## Installation
 
 ```bash
-yarn add -D @sportshead/webpack-buildinfo # yarn (recommended)
+yarn add -D webpack-plugin-buildinfo # yarn (recommended)
 
-npm install --save-dev @sportshead/webpack-buildinfo # npm
+npm install --save-dev webpack-plugin-buildinfo # npm
 ```
 
 ## Usage
@@ -27,13 +27,13 @@ npm install --save-dev @sportshead/webpack-buildinfo # npm
 ES6 Modules:
 
 ```javascript
-import buildinfo from "!@sportshead/webpack-buildinfo?gitHashShort&time!";
+import buildinfo from "!webpack-plugin-buildinfo?gitHashShort&time!";
 ```
 
 Node.JS require:
 
 ```javascript
-const buildinfo = require("!@sportshead/webpack-buildinfo?gitHashShort&time!");
+const buildinfo = require("!webpack-plugin-buildinfo?gitHashShort&time!");
 ```
 
 You can then use the `buildinfo` object like so:
@@ -48,7 +48,7 @@ console.log(
 
 ## Configuration
 
-Change the import string with the flags to set. E.g. `"!@sportshead/webpack-buildinfo?flag1&flag2&flag3!"`
+Change the import string with the flags to set. E.g. `"!webpack-plugin-buildinfo?flag1&flag2&flag3!"`
 
 For more up to date information see [the source code](src/index.ts).
 

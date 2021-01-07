@@ -8,7 +8,7 @@ export default function loader(
         getLogger: (pluginName: string) => webpack.Logger;
     }
 ) {
-    const logger = this.getLogger("@sportshead/webpack-buildinfo");
+    const logger = this.getLogger("webpack-plugin-buildinfo");
 
     const defaultOptions = {
         esModule: true,
