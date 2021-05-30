@@ -125,7 +125,7 @@ export default function loader(
         null,
         `${
             options.esModule ? "export default" : "module.exports ="
-        } ${JSON.stringify(output)}`
+        } ${JSON.stringify(output)};`
     );
 }
 
